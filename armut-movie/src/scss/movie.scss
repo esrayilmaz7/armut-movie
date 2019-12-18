@@ -1,0 +1,67 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+.movie {
+  padding: 44px 44px 66px 44px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 98, 0, 1) 0%,
+    rgba(255, 98, 0, 1) 19%,
+    rgba(255, 255, 255, 1) 37%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  &__description {
+    text-align: center;
+  }
+
+  &__name {
+    font-family: Roboto;
+    font-size: $h1-font-size;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-name;
+    margin-top: 49px;
+    margin-bottom: 0;
+  }
+  &__info {
+    font-family: Roboto;
+    font-size: $p-font-size;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-info;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  &__rating {
+    margin-top: 24px;
+    margin-bottom: 35px;
+    &--rate {
+      margin: 0;
+      display: inline-block;
+      font-family: Roboto;
+      font-size: $h3-font-size;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $color-rate;
+    }
+
+    &--max-rate {
+      margin: 0;
+      display: inline-block;
+      font-family: Roboto;
+      font-size: $h4-font-size;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $color-max-rate;
+    }
+  }
+  &__details {
+    margin-top: 73px;
+  }
+  &__button {
+    @include button($color-button, 8px, 100%, 26px, 22px, 21px);
+  }
+}

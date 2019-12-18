@@ -1,0 +1,25 @@
+@mixin button(
+  $background-color,
+  $border-radius,
+  $width,
+  $padding-top,
+  $padding-bottom,
+  $font-size
+) {
+  font-family: Roboto;
+  font-size: $font-size;
+  font-weight: bold;
+  line-height: normal;
+  letter-spacing: 2.1px;
+  text-align: center;
+  color: white;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  width: $width;
+  padding: 0;
+  outline-style: none;
+  padding-top: $padding-top;
+  padding-bottom: $padding-bottom;
+  text-transform: uppercase;
+  border-style: none;
+}

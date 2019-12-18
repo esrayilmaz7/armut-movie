@@ -1,0 +1,40 @@
+@import "./variables.scss";
+.movie-poster {
+  max-width: 326px;
+  height: 483px;
+  margin: auto;
+  position: relative;
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  &__toggle-button {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    bottom: -22px;
+    right: -22px;
+    font-size: 20px;
+    color: white;
+    background-color: $color-orange;
+
+    &--red {
+      background-color: $color-red;
+    }
+
+    &.no-show {
+      display: none !important;
+    }
+  }
+  &.movie-poster--details {
+    max-width: 180px;
+    height: 266px;
+    margin: unset;
+  }
+}

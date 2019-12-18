@@ -1,0 +1,123 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+
+.selected-movie {
+  padding: 24px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 98, 0, 1) 0%,
+    rgba(255, 98, 0, 1) 10%,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(255, 255, 255, 1) 100%
+  );
+
+  &__description {
+    margin-top: 34px;
+    padding-bottom: 36px;
+  }
+  &__upper-part {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__name {
+    display: inline;
+    font-family: Roboto;
+    font-size: $h3-font-size;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-name;
+    margin: 0;
+    margin-right: 11px;
+    white-space: normal;
+  }
+  &__info {
+    font-family: Roboto;
+    font-size: $p-font-size;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-info;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  &__content {
+    font-family: PTSerif;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: normal;
+    padding-bottom: 36px;
+    padding-top: 28px;
+    margin: 0;
+    border-bottom: solid 1px $color-line;
+  }
+  &__rating {
+    width: 36px;
+    height: 26px;
+    border-radius: 4px;
+    border: solid 1px $color-orange;
+    text-align: center;
+    margin-right: 24px;
+    &--rate {
+      margin: 0;
+      font-family: Roboto;
+      font-size: $span-font-size;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $color-orange;
+    }
+  }
+  &__progressbar {
+    width: 211px;
+    height: 6px;
+  }
+  &__details {
+    margin-top: 73px;
+  }
+  &__button {
+    @include button($color-button, 8px, 100%, 25px, 23px, 20px);
+  }
+  &__toggle {
+    padding-right: 20px;
+    padding-left: 19px;
+    margin-bottom: 44px;
+  }
+
+  &__lower-part {
+    padding-top: 39px;
+    margin-right: -15px;
+    margin-left: -15px;
+    &--inner {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+    }
+    &--description {
+      font-weight: bold;
+      display: inline;
+      font-family: Roboto;
+      font-size: 16px;
+      letter-spacing: normal;
+    }
+    &--explanation {
+      display: inline;
+      color: $color-orange;
+      margin: 0;
+      font-family: Roboto;
+      font-size: 16px;
+      line-height: 1.75;
+      letter-spacing: normal;
+    }
+    &--extra {
+      font-style: italic;
+      color: $color-black;
+    }
+  }
+}
+
+.btn-remove {
+  background-color: $color-red;
+}
